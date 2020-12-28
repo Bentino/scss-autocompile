@@ -112,10 +112,10 @@ class ExampleCommand(sublime_plugin.EventListener):
 
         compile_command = [
             "node-sass-chokidar",
-            '--output-style=compressed' if compress else '',
-            '--source-map=true' if sourcemap else '',
             str(file_name),
             str(destination),
+            '--output-style=compressed' if compress else '',
+            '--source-map=true' if sourcemap else '',
         ]
         print(
             " ".join(compile_command)
@@ -132,5 +132,5 @@ class ExampleCommand(sublime_plugin.EventListener):
         if err:
             error = err.decode('utf-8')
             error = json.loads(error)
-            formatted = re.sub("(\[\d+m)","", error['formatted'])
+            formatted = re.sub("(\[\d+m)","", error['message'])
             sublime.error_message(formatted)

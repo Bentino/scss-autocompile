@@ -1,10 +1,9 @@
 # Sublime Text 3 SCSS Autocompile
-I do like this [less-autocompile package](https://github.com/lohek/less-autocompile) for `Atom`. But I don't like Atom too much. I wanted that plugin for Sublime Text 3. So I've created my own [very first plugin for ST3](https://github.com/khorolets/less-autocompile) inspired by [@lohek](https://github.com/lohek).
+This version has been forked from @khorolets(https://github.com/khorolets) version. That version has some bugs when you try to compile an .scss file without parameters the plugin will error. So I've created my own version.
+
+I do like this [less-autocompile package](https://github.com/lohek/less-autocompile) for `Atom`. But I don't like Atom too much. I wanted that plugin for Sublime Text 3.
 
 I've switched to SCSS and I've decided to adapt my plugin. Here it is.
-
-**Warning!** My plugin has not been tested well and I can't recommend you to use it till I finish it. I'll remove this warning once it is done. I've tested in on *macOS* only for now.
-
 
 ## Dependencies
 
